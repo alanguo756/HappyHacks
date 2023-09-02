@@ -1,0 +1,58 @@
+/* Email Box */
+	#mail {
+	 width: 350px;
+	 height: 60px;
+	 border-radius: 4%;
+	 border-width: 3px;
+	 padding-left: 10px;
+	font-size: 25px;
+	}
+
+	/* Password Box */
+
+	#lock {
+	 width: 350px;
+	 height: 60px;
+	 border-radius: 4%;
+	 border-width: 3px;
+	 padding-left: 10px;
+	font-size: 25px;
+	}
+
+	#signup {
+	 width: 350px;
+	 height: 50px;
+	 border-radius: 10%;
+	 border-width: 3px;
+	 padding-left: 10px;
+	 background-color: greenyellow;
+	font-size: 25px;
+	}
+
+	/* Center the boxes */
+	.form {
+		display: flex;
+	  	flex-direction: column;
+	  	align-items: center;
+	  	justify-content: center;
+	  	height: 100vh;
+		}
+
+	#login {
+		padding: 20px;
+		font-size: 30px;
+		color: pink;
+
+
+	}
+
+	/* Background color */
+	body {
+		background-color: teal;
+	}
+
+	/* Heading color */
+	h1 {
+		color: beige;
+		font-size: 50px;
+	}
