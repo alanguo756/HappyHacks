@@ -7,9 +7,26 @@
     <title>Medication Tracker</title>
 </head>
 <body>
+    <br>
+    <center>
+        <a href="index.html">Home</a>
+    </center>
+    
     <div class="container">
+        
         <h1>Medication Tracker</h1>
-        <input type="text" id="medicationInput" placeholder="Enter medication">
+        <div>
+            <label for="medicationName">Medication Name:</label>
+            <input type="text" id="medicationName" placeholder="Enter medication">
+        </div>
+        <div>
+            <label for="medicationDosage">Dosage:</label>
+            <input type="text" id="medicationDosage" placeholder="Enter dosage">
+        </div>
+        <div>
+            <label for="medicationTimesPerWeek">Times Per Week:</label>
+            <input type="number" id="medicationTimesPerWeek" placeholder="Enter times per week">
+        </div>
         <button onclick="addMedication()">Add Medication</button>
         <button onclick="resetList()">Reset</button>
         <ul id="medicationList"></ul>

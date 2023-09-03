@@ -1,21 +1,37 @@
-const medicationInput = document.getElementById("medicationInput");
+const medicationNameInput = document.getElementById("medicationName");
+const medicationDosageInput = document.getElementById("medicationDosage");
+const medicationTimesPerWeekInput = document.getElementById("medicationTimesPerWeek");
 const medicationList = document.getElementById("medicationList");
 
 function addMedication() {
-    const medicationName = medicationInput.value.trim();
-    if (medicationName !== "") {
+    const medicationName = medicationNameInput.value.trim();
+    const dosage = medicationDosageInput.value.trim();
+    const timesPerWeek = medicationTimesPerWeekInput.value.trim();
+
+    if (medicationName !== "" && dosage !== "" && timesPerWeek !== "") {
         const li = document.createElement("li");
-        li.textContent = medicationName;
-        
+        li.textContent = `${medicationName} (Dosage: ${dosage}, Times Per Week: ${timesPerWeek})`;
+
         const takenButton = document.createElement("button");
         takenButton.textContent = "Mark as Taken";
         takenButton.onclick = () => {
             markAsTaken(li);
         };
-        
+
+        const removeButton = document.createElement("button");
+        removeButton.textContent = "Remove";
+        removeButton.onclick = () => {
+            removeMedication(li);
+        };
+
         li.appendChild(takenButton);
+        li.appendChild(removeButton);
         medicationList.appendChild(li);
-        medicationInput.value = "";
+        
+        // Clear input fields
+        medicationNameInput.value = "";
+        medicationDosageInput.value = "";
+        medicationTimesPerWeekInput.value = "";
     }
 }
 
@@ -26,6 +42,10 @@ function markAsTaken(li) {
         takenText.textContent = ` (Taken at ${timeTaken})`;
         li.appendChild(takenText);
     }
+}
+
+function removeMedication(li) {
+    li.remove();
 }
 
 function resetList() {

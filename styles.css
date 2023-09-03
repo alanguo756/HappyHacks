@@ -32,6 +32,14 @@ button {
     border: none;
     cursor: pointer;
 }
+a{
+    padding: 8px 15px;
+    margin: 5px;
+    background-color: #FF6B6B;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
 
 ul {
     list-style: none;
