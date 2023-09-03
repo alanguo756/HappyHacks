@@ -42,17 +42,14 @@
 		padding: 20px;
 		font-size: 30px;
 		color: pink;
-
-
 	}
 
 	/* Background color */
 	body {
-		background-color: teal;
+		background-image: linear-gradient(rgba(4, 41, 58, 0.75),rgba(3, 24, 71, 0.75), rgba(3, 12, 59, 0.75));
 	}
-
 	/* Heading color */
 	h1 {
-		color: beige;
+		color: yellow;
 		font-size: 50px;
 	}
