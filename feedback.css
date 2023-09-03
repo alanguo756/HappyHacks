@@ -1,0 +1,175 @@
+* {
+	padding: 0;
+	font-family: sans-serif;
+	text-align: center;
+	color: white;
+}
+
+body {
+	width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(bg2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+table{
+	table-layout: fixed;
+	border-spacing:10px 10px;
+	border-collapse: collapse;
+	border-radius: 25px;
+}
+input.checkbox {
+	width: 100px;
+}
+.vehicle1 {
+	width: 100px;
+	height: 15vw;
+}
+
+tr {
+	border: solid;
+	border-radius: 25px;
+}
+td {
+	border: solid;
+	text-align: center;
+	height: 50px;
+	border-radius: 25px;
+}
+
+.html{
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	text-align: center;
+	color: #fff;
+}
+.html h1{
+	font-size: 125px;
+	margin-top: 80px;
+}
+.html p{
+	margin: 20px auto;
+	font-weight: 100;
+	line-height: 25px;
+}
+
+.topic {
+	color: white;
+	font-size: 28px;
+}
+
+.medical_history {
+	color: white;
+	height: 20px;
+	list-style: none;
+	text-align: justify;
+	margin: 100px auto;
+	background: white;
+}
+
+.medical_history:after {
+	display: inline-block;
+	content:"";
+	width: 100%;
+}
+
+.medical_history li {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background: black;
+	text-align: center;
+	line-height: 1;
+	position: relative;
+	border-radius: 50%;
+}
+
+.medical_history li:before {
+	display: inline-block;
+	content: attr(data-date);
+	font-size: 25px;
+	position: absolute;
+	transform: translateX(-50%);
+}
+
+.medical_history li:nth-child(odd):before {
+	top: -60px;
+}
+.medical_history li:nth-child(even):before {
+	bottom: -60px;
+}
+
+.medical_history li:after {
+	display: inline-block;
+	content: attr(data-text);
+	font-size: 14px;
+	position: absolute;
+	transform: translateX(-50%);
+}
+
+.medical_history li:nth-child(odd):after {
+	bottom: 0;
+	margin-bottom: -10px;
+	transform: translate(-50%, 100%);
+}
+
+.medical_history li:nth-child(even):after {
+	top: 0;
+	margin-top: -10px;
+	transform: translate(-50%, -100%);
+}
+
+
+.navbar{
+	font-size: 19px;
+	width: 85%;
+	margin: auto;
+	padding: 35px 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.logo{
+	width: 400px;
+	cursor: pointer;
+}
+
+input[type="checkbox"] {
+  accent-color: rgb(130, 224, 255);
+}
+
+.navbar ul li{
+	list-style: none;
+	display: inline-block;
+	margin: 0 20px;
+	position: relative;
+}
+
+.navbar ul li a{
+	text-decoration: none;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.navbar ul li::after{
+	content: '';
+	height: 3px;
+	width: 0;
+	background: #009688;
+	position: absolute;
+	left: 0;
+	bottom: -5;
+	transition: 0.5s
+}
+
+.navbar ul li:hover::after{
+	width: 100%
+}
+
+th{
+	font-size: 2em;	
+}
