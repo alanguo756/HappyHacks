@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medication Tracker</title>
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h1>Medication Tracker</h1>
+    <form id="medication-form">
+        <label for="medication-name">Medication Name:</label>
+        <input type="text" id="medication-name" required>
+        <button type="button" id="add-medication">Add</button>
+        <button type="button" id="reset-list">Reset</button> <!-- Add the Reset button -->
+    </form>
+
+    <h2>Medication List</h2>
+    <ul id="medication-list">
+        <!-- Medication items will be added here -->
+    </ul>
+
+    <script>
+        // JavaScript to handle the functionality
+        const medicationForm = document.getElementById("medication-form");
+        const medicationList = document.getElementById("medication-list");
+        const resetButton = document.getElementById("reset-list"); // Get the Reset button element
+
+        medicationForm.addEventListener("submit", function (e) {
+            e.preventDefault();
+            const medicationNameInput = document.getElementById("medication-name");
+            const medicationName = medicationNameInput.value.trim();
+
+            if (medicationName !== "") {
+                addMedicationItem(medicationName);
+                medicationNameInput.value = "";
+            }
+        });
+
+        function addMedicationItem(medicationName) {
+            const li = document.createElement("li");
+            li.innerHTML = `
+                ${medicationName}
+                <button onclick="markAsTaken(this)">Taken Today</button>
+                <button onclick="markAsNotTaken(this)">Not Taken Today</button>
+                <button onclick="removeMedication(this)">Remove</button>
+            `;
+            medicationList.appendChild(li);
+        }
+
+        function markAsTaken(button) {
+            button.parentNode.classList.add("taken");
+        }
+
+        function markAsNotTaken(button) {
+            button.parentNode.classList.remove("taken");
+        }
+
+        function removeMedication(button) {
+            const listItem = button.parentNode;
+            listItem.remove();
+        }
+
+        // Add an event listener to the Reset button
+        resetButton.addEventListener("click", function () {
+            const listItems = document.querySelectorAll("#medication-list li");
+            listItems.forEach(function (item) {
+                item.remove();
+            });
+        });
+    </script>
+</body>
+</html>
