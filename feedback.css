@@ -19,12 +19,11 @@ table{
 	border-collapse: collapse;
 	border-radius: 25px;
 }
-input.checkbox {
+input[type=checkbox] {
+	accent-color: rgb(130, 224, 255);
+	margin: 0;
 	width: 100px;
-}
-.vehicle1 {
-	width: 100px;
-	height: 15vw;
+	height: 14vw;
 }
 
 tr {
@@ -58,7 +57,7 @@ td {
 
 .topic {
 	color: yellow;
-	font-size: 28px;
+	font-size: 1.5em;
 }
 
 .medical_history {
@@ -138,8 +137,19 @@ td {
 	cursor: pointer;
 }
 
-input[type="checkbox"] {
-  accent-color: rgb(130, 224, 255);
+.navbar{
+	font-size: 17px;
+	width: 95%;
+	margin: auto;
+	padding: 35px 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.logo{
+	width: 400px;
+	cursor: pointer;
 }
 
 .navbar ul li{
@@ -171,5 +181,17 @@ input[type="checkbox"] {
 }
 
 th{
-	font-size: 2em;	
+	font-size: 1.5em;	
+}
+
+button {
+	text-align: center;
+	height: 10vh;
+	width: 10vw;
+	font-size: 2em;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(bg2.jpg); 
+}
+
+.inventory {
+	list-style-type: "🤯";
 }

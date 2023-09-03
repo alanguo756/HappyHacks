@@ -12,18 +12,18 @@
 }
 
 .navbar{
-    font-size: 19px;
-    width: 85%;
-    margin: auto;
-    padding: 35px 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+	font-size: 19px;
+	width: 95%;
+	margin: auto;
+	padding: 35px 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 }
 
 .logo{
-    width: 400px;
-    cursor: pointer;
+	width: 400px;
+	cursor: pointer;
 }
 
 .navbar ul li{
@@ -35,7 +35,7 @@
 
 .navbar ul li a{
     text-decoration: none;
-    color: #fff;
+    color: yellow;
     text-transform: uppercase;
 }
 

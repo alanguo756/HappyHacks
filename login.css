@@ -42,8 +42,6 @@
 		padding: 20px;
 		font-size: 30px;
 		color: pink;
-
-
 	}
 
 	/* Background color */
@@ -52,6 +50,6 @@
 	}
 	/* Heading color */
 	h1 {
-		color: beige;
+		color: yellow;
 		font-size: 50px;
 	}
