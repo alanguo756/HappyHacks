@@ -11,6 +11,13 @@ h4 {
     font-size: 28;
 }
 
+input[type=checkbox] {
+	accent-color: rgb(130, 224, 255);
+	margin: 0;
+	width: 50px;
+	height: 2vw;
+}
+
 input {
     font-size: 30;
     color: darkgreen;

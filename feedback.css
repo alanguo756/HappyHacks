@@ -1,4 +1,5 @@
 * {
+	margin:0;
 	padding: 0;
 	font-family: sans-serif;
 	text-align: center;
@@ -170,7 +171,7 @@ th{
 	font-size: 1.5em;	
 }
 
-button {
+#submit_button button {
 	text-align: center;
 	height: 10vh;
 	width: 10vw;
@@ -181,3 +182,55 @@ button {
 .inventory {
 	list-style-type: "🤯";
 }
+
+.container {
+	padding: 20px;
+	border-radius: 10px;
+	margin: 20px auto;
+	max-width: 400px;
+	box-shadow: 0px 0px 10px rgba(3, 3, 3, 0.5);
+	background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(bg2.jpg);
+}
+
+
+.container input[type="text"] {
+	width: 70%;
+	padding: 8px;
+	margin: 5px;
+	color: black;
+}
+
+.container input[type="number"] {
+	width: 70%;
+	padding: 8px;
+	margin: 5px;
+	color: black;
+}
+.container button {
+    padding: 8px 15px;
+    margin: 5px;
+    color: yellow;
+    border: none;
+    cursor: pointer;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(bg2.jpg);
+}
+
+.container a{
+    padding: 8px 15px;
+    margin: 5px;
+    color: yellow;
+    border: none;
+    cursor: pointer;
+}
+
+.container ul {
+    list-style: none;
+    padding: 0;
+}
+
+.container li {
+    padding: 5px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
